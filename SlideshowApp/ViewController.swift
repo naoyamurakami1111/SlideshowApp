@@ -82,6 +82,14 @@ class ViewController: UIViewController {
     
     @IBAction func tap(_ sender: Any) {
         performSegue(withIdentifier: "result", sender: nil)
+        
+        timer.invalidate()
+        timer = nil
+        saiseibtn.setTitle("再生", for: .normal)
+        modorubtn.isEnabled = true
+        susumubtn.isEnabled = true
+
+        
 
         }
     
